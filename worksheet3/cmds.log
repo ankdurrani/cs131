@@ -1,0 +1,55 @@
+  296  mkdir worksheet3
+  297  cd worksheet3
+  298  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  299  grep
+  300  grep -E "Entertainment" "Global YouTube Statistics.csv" | sort -t "," -k3 -n -r > entertainment.txt
+  301  cat entertainment.txt
+  302  vi entertainment.txt
+  303  head -n 1 entertainment.txt
+  304  touch task2.txt
+  305  head -n 1 entertainment.txt > task2.txt
+  306  grep -E "Sports" "Global YouTube Statistics.csv" | sort -t "," -k3 -n -r > sports.txt
+  307  tail -1 n sports.txt
+  308  head -n 1 sports.txt
+  309  head -n 1 sports.txt >> task2.txt
+  310  vi task2.txt
+  311  grep -E "Education" "Global YouTube Statistics.csv" | sort -t "," -k3 -n
+  312  grep -E "Education" "Global YouTube Statistics.csv" | sort -t "," -k3 -n > education.txt
+  313  head -n 1 education.txt >> task2.txt
+  314  touch task1.txt
+  315  grep -E "United States" "Global YouTube Statistics.csv" | sort -t "," -k16 -n -r > unitedstates.txt
+  316  grep -E "United Kingdom" "Global YouTube Statistics.csv" | sort -t "," -k16 -n -r > unitedkingdom.txt
+  317  grep -E "India" Global YouTube Statistics.csv | sort -t "," -k16 -n -r > india.txt
+  318  grep -E 
+  319  grep -E "India" "Global YouTube Statistics.csv | sort -t "," -k16 -n -r > india.txt
+  320  head -n 1 unitedstates.txt > task1.txt
+  321  head -n 1 unitedkingdom.txt >task1.txt
+  322  head -n 1 unitedkingdom.txt > task1.txt
+  323  head -n 1 india.txt > task1.txt
+  324  vi task1.txt
+  325  vi task1.txt
+  326  git status
+  327  q
+  328  q
+  329  vi task1.txt
+  330  cat task1.txt
+  331  git status
+  332  cd worksheet3
+  333  vi task1.txt
+  334  vi task2.txt
+  335  grep -E "India" "Global YouTube Statistics.csv" | sort -t "," -k16 -n -r > India.txt
+  336  vi India.txt
+  337  head -n 1 India.txt
+  338  head -n 1 India.txt >> task1.txt
+  339  vi task1.txt
+  340  grep -E "United States" "Global YouTube Statistics.csv" | sort -t "," -k16 -n -r > USA.txt
+  341  head -n 1 USA.txt
+  342  head -n 1 USA.txt >> task1.txt
+  343  grep -E "United Kingdom" "Global YouTube Statistics.csv | sort -t "," -k16 -n -r > UK.txt
+  344  head -n 1 UK.txt
+  345  cd worksheet3
+  346  vi task1.txt
+  347  vi task2.txt
+  348  git add task1.txt
+  349  git add task2.txt
+  350  history > cmds.log
