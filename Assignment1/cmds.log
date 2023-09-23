@@ -1,0 +1,51 @@
+  373  git pull
+  374  mkdir Assignment1 <---- question 1
+  375  cd Assignment1
+  376  echo $HOME <----- question 2
+  377  cat /etc/passwd <------ question 3
+  378  anasf23:x:1139:1139::/mnt/scratch/FA23_CS131_Ashish/anasf23:/bin/bash
+  379  mkdir myDir | <--- this is question 4
+  380  chmod man
+  381  man chmod
+  382  echo $SHELL <---- question 2
+  383  chmod u -w myDir
+  384  chmod -w myDir <---- question 4
+  385  cd myDir
+  386  ls     <-- 4
+  387  ls -l
+  388  touch testperms.txt  <--- testing write permissions for q4
+  389  cd ..
+  390  mkdir myDir2
+  391  mkdir myDir3
+  392  cd myDir2
+  393  touch myFile.txt
+  394  mv myFile.txt myDir3
+  395  cat myFile.txt
+  396  cd myDir3
+  397  mkdir myDir3
+  398  cd ..
+  399  cd myDir3
+  400  cat myFile.txt
+  401  cd ..
+  402  cd myDir2
+  403  vi myFile.txt
+  404  cat myFile.txt
+  405  mv myFile.txt myDir3 <---- question 6
+  406  cat myFile.txt
+  407  cd ..
+  408  cd myDir3
+  409  cat myFile.txt
+  410
+  411  free
+  412  free -m <---- question 6
+  413  cat /etc/os-release  <---- question 9
+  414  ls -l etc/os-release <---- question 10
+  415  vi Assignment1.txt
+  416  ls -l /etc/os-release
+  417  vi Assignment1.txt
+  418  rm Assignment1.txt
+  419  cd ..
+  420  vi Assignment1.txt
+  421  git add Assignment1.txt
+  422  touch cmds.log
+  423  history > cmds.log

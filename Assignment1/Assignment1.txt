@@ -1,0 +1,11 @@
+1) mkdir command is used to create the directory 'Assignment1'.
+2) echo $SHELL is the command used, output:
+/bin/bash
+2b.) echo $HOME is the command used, output:
+/mnt/scratch/FA23_CS131_Ashish/anasf23
+3) My UID is 1139. I used the cat command to view the /etc/passwor/ file to find this. output:
+anasf23:x:1139:1139::/mnt/scratch/FA23_CS131_Ashish/anasf23:/bin/bash
+4) I can still cd into myDir, as read permissions remain but write permissions were removed. I can ls it and ls -l it. However, I cannot create a file in the directory as the permissions are gone.
+6) The amount of memory in the IBM VM is 71367 MiB.
+9) Red Hat Enterprise Linux is the OS, found under the /etc/os-release file.
+10) rwxrwxrwx
