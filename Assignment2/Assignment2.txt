@@ -1,0 +1,63 @@
+1.
+a. Explain in simple English what we are trying to do with this command.
+
+It pastes the results of the command into two files, one.txt will have the results, and two.txt will catch any errors the command ran into.
+b. Using the cat command view one.txt and two.txt. Explain the content
+It found directories and pasted them into one.txt, and for files that I did not have permission to view, the error was put into two.txt.
+
+2. Which [Month, Year] had the most YouTube channels created
+March 2006
+As per the Dataset, Top 3 [Month, Year] with the most number of YouTube channels created were :
+2006,Mar, 15 channels
+2014,Jul, 13 channels
+2014,Aug, 12 channels 
+The command(s) used to find it was this: _______________
+cut -d',' -f20,21 Global\ YouTube\ Statistics.csv > dates.txt
+sort -t',' -k20,20n -k21,21M dates.txt > sortedDates.txt
+uniq -c sortedDates.txt | sort -k1,1n | tail -3 > topDates.txt
+Explain the command along with the parameters used and the reason for using them.
+The cut command grabs the date colums for us. -f 20,21 tells it to go to those specifically, those lines have the year and months.
+Sort grabs them in order.
+Uniq counts the amounts of dates, sorted them, and tail will give us the highest amounts first
+
+3. Write the command you would use to find all the processes owned by you. Paste the output of the same. 
+ps -u $USER
+
+    PID TTY          TIME CMD
+3984744 ?        00:00:01 systemd
+3984746 ?        00:00:00 (sd-pam)
+3984753 ?        00:00:00 sshd
+3984757 pts/49   00:00:00 bash
+4009117 pts/49   00:00:00 tmux: client
+4009121 ?        00:00:00 tmux: server
+4009122 pts/2    00:00:00 bash
+4009642 pts/73   00:00:00 bash
+4010870 pts/73   00:00:00 ps
+
+4. Open two terminals and login to the IBM VM
+   PID TTY          TIME CMD
+3984744 ?        00:00:01 systemd
+3984746 ?        00:00:00 (sd-pam)
+3984753 ?        00:00:00 sshd
+3984757 pts/49   00:00:00 bash
+4009117 pts/49   00:00:00 tmux: client
+4009121 ?        00:00:00 tmux: server
+4009122 pts/2    00:00:00 bash
+4009642 pts/73   00:00:00 bash
+4009892 pts/2    00:00:00 vim
+4010204 pts/73   00:00:00 ps
+Having the vim process running on the second terminal shows an extra process when viewing processes on the second terminal, showcasing how both terminals are controlled by the same user.
+
+After closing vim on terminal one, the output matches the same as the output in terminal 3. This is because vim is no longer running on terminal one.
+
+5. What is the init process in Linux ? Find the process id for the init process. Show the command you used to do this. ( Note: The init process is also called systemd in the flavor we use on IBM V
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME
+│COMMAND│root           1  0.3  0.0 178624 18368 ?        Ss   Oct05  45:18
+│/usr/lib/systemd/systemd --switched-root --system --deserialize 17
+│[anasf23@sjsu Assignment2]$
+
+Command used: ps aux | sort -k2,2n | head -2
+6. Explain 'ps aux' in not more than 4 sentences.
+
+The command shows all running processes of the user in a neat, readable format categorized in labeled columns.

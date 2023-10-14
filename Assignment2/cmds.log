@@ -1,0 +1,27 @@
+I dont know why my history command is only including 2 commands from my current session? Maybe it is because of tmux. I will have to ask the professor next week. So I will just retype the commands I used
+(below, you can see those commands were from last assignment, until ps aux)  
+507  git add Subscribers
+  508  git status
+  509  git commit
+  510  git push
+  511  git pull
+  512  git push
+  513  vi file.txt
+  514  ps aux | sort -k2,2n | head -2
+  515  history > cmds.log
+-----------------------
+mkdir Assignment2
+cd Assignment2
+touch Assignment2.txt
+wget (youtube.csv link)
+cut -d',' -f20,21 Global\ YouTube\ Statistics.csv > dates.txt
+sort -t',' -k20,20n -k21,21M dates.txt > sortedDates.txt
+uniq -c sortedDates.txt | sort -k1,1n | tail -3 > topDates.txt
+vi all of those .txts to verify results
+ps -u $USER
+tmux (CTRL+B % to create second terminal window)
+vi file.txt
+ps aux | sort -k2,2n | head -2
+history > cmds.log
+(that should be about all of them lol)
+
