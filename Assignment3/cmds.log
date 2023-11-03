@@ -1,0 +1,62 @@
+  542  cat ps.fake
+  543  rm passwd.fake
+  544  cat passwd.fake
+  545  vim passwd.fake
+  546  rm ps.fake
+  547  vim ps.fake
+  548  awk 'f23' last.fake >> lastf23.fake
+  549  cat lastf23.fake
+  550  vi last.fake
+  551  rm last.fake
+  552  vim last.fake
+  553  awk 'f23' last.fake >> lastf23.fake
+  554  cat lastf23.fake
+  555  awk 'zipengf2' last.fake >> lastf23.fake
+  556  cat lastf23.fake
+  557  vi lastf23.fake
+  558  awk '/f23/' last.fake >> lastf23.fake
+  559  cat lastf23.fake
+  560  wc -l last.fake
+  561  wc -l lastf23.fake
+  562  touch Assignment3.txt
+  563  vi Assignment3.txt
+  564  grep -o 'Sun' lastf23.fake >> sundaypeople.fake
+  565  cat sundaypeople.fake
+  566  grep 'Sun' lastf23.fake >> sundaypeople.fake
+  567  cat sundaypeople.fake
+  568  touch task3-script
+  569  vim task3-script
+  570  ./task3-script
+  571  $ ./task3-script
+  572  chmod +rwx task3-script
+  573  ./task3-script
+  574  vim task3-script
+  575  ./task3-script
+  576  vim task3-script
+  577  ./task3-script
+  578  vim task3-script
+  579  ./task3-script
+  580  vim task3-script
+  581  ./task3-script
+  582  vim task3-script
+  583  ./task3-script
+  584  vim task3-script
+  585  ./task3-script
+  586  vim task3-script
+  587  ./task3-script
+  588  vim task3-script
+  589  ./task3-script
+  590  vim task3-script
+  591  ./task3-script
+  592  vim task3-script
+  593  ./task3-script
+  594  vim task3-script
+  595  ./task3-script
+  596  cd Assignment3
+  597  ls
+  598  $ awk -F ':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+  599  awk -F ':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+  600  $ sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+  601   sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+  602  touch cmds.log
+  603  history > cmds.log
